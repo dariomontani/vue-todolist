@@ -35,8 +35,11 @@ var app = new Vue(
                 this.todos.unshift(obj);
                 this.newToDo = '';
             } else {
-                alert('non hai inserito niente')
+                alert('non hai inserito niente!')
             }
+        },
+        removeToDo(index) {
+            this.todos.splice(index, 1);
         }
     }
 })

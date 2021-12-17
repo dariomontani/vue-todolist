@@ -27,10 +27,15 @@
                     <i @click="addToDo" class="fas fa-plus"></i>
                 </div>
 
-                <div v-for="todo in todos" class="containerToDo">
-                    <i class="far fa-check-circle"></i>
-                    <i class="far fa-times-circle none"></i>
-                    <p class="lineThrough">{{todo.text}}</p>
+                <div v-for="(todo, index) in todos" class="containerToDo">
+                    <div class="toDoLeft">
+                        <i class="far fa-check-circle"></i>
+                        <i class="far fa-times-circle none"></i>
+                        <p class="lineThrough">{{todo.text}}</p>
+                    </div>
+                    <div class="toDoRight">
+                        <i @click="removeToDo(index)" class="fas fa-times"></i>
+                    </div>
                 </div>
 
             </main>
