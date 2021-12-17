@@ -2,6 +2,9 @@ var app = new Vue(
     {
     el: '#app',
     data: {
+
+        newToDo: '',
+
         todos: [
             {
                 text: 'hvgchvh'
@@ -19,6 +22,22 @@ var app = new Vue(
                 text: 'jgjgfhjgfj'
             }
         ]
+    },
+
+    methods: {
+        addToDo() {
+            if (this.newToDo.length != 0) {
+                
+                let obj = {
+                    text: this.newToDo
+                }
+    
+                this.todos.unshift(obj);
+                this.newToDo = '';
+            } else {
+                alert('non hai inserito niente')
+            }
+        }
     }
 })
 
