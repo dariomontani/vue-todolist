@@ -1,7 +1,24 @@
-var app = new Vue({
+var app = new Vue(
+    {
     el: '#app',
     data: {
-        
+        todos: [
+            {
+                text: 'hvgchvh'
+            },
+            {
+                text: 'hgjvgsdgfsdfdsfchvh'
+            },
+            {
+                text: 'hgjvfghdfghgfdhhdshdgchvh'
+            },
+            {
+                text: 'hgjvgfghdfghgfdhfdhchvh'
+            },
+            {
+                text: 'jgjgfhjgfj'
+            }
+        ]
     }
 })
 
