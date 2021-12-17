@@ -7,19 +7,24 @@ var app = new Vue(
 
         todos: [
             {
-                text: 'hvgchvh'
+                text: 'fare la spesa',
+                done: true
             },
             {
-                text: 'hgjvgsdgfsdfdsfchvh'
+                text: 'dentista ore 15:30',
+                done: true
             },
             {
-                text: 'hgjvfghdfghgfdhhdshdgchvh'
+                text: 'fare i compiti',
+                done: true
             },
             {
-                text: 'hgjvgfghdfghgfdhfdhchvh'
+                text: 'ritire il pacco',
+                done: true
             },
             {
-                text: 'jgjgfhjgfj'
+                text: 'pagare boletta',
+                done: true
             }
         ]
     },
