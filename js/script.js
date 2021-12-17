@@ -34,7 +34,8 @@ var app = new Vue(
             if (this.newToDo.length != 0) {
                 
                 let obj = {
-                    text: this.newToDo
+                    text: this.newToDo,
+                    done: true
                 }
     
                 this.todos.unshift(obj);

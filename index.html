@@ -29,7 +29,7 @@
 
                 <div v-for="(todo, index) in todos" class="containerToDo">
                     <div class="toDoLeft">
-                        
+
                         <i :class="todo.done == true ? 'far fa-circle' : 'far fa-check-circle'" @click="todo.done = !todo.done" ></i>
 
                         <p :class="todo.done == true ? '' : 'lineThrough'">{{todo.text}}</p>
