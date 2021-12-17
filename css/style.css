@@ -10,7 +10,7 @@ html{
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 /* header */
@@ -21,7 +21,22 @@ header{
     display: flex;
     align-items: flex-end;
     border-radius: 1em;
-    margin-bottom: 1em;
+    margin: 2em 0;
+    background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1{
@@ -35,13 +50,14 @@ h1{
     display: flex;
     justify-content: space-between;
     padding: 0.3em;
-    width: 40%;
+    width: 50%;
 }
 
 .input input{
     border-style: none;
     outline: none;
     color: rgb(16, 115, 207);
+    width: 50%;
 }
 
 .input i{
